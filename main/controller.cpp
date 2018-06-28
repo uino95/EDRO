@@ -76,6 +76,7 @@ void Controller::updateEmotion(unsigned long current_millis){
 
 void Controller::changeEmotion(){
   current_emotion->stop();
+  //next_emotion = 2;
   switch(next_emotion){
     case 1:
     {
