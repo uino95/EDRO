@@ -52,7 +52,7 @@ Anger::~Anger(){
 void Anger::motorAction(){
   //Serial.println("motor action ");
   //Serial.println(millis());
-  if(millis() -  this->emotion_started <= 2600){
+  if(millis() -  this->emotion_started <= 3500){
     this->motor_last_millis = millis();
     controller->motor[0]->forward(255);
     controller->motor[1]->reverse(255);
@@ -75,7 +75,7 @@ void Anger::motorAction(){
 void Anger::servoAction(){
   //Serial.println("servo action ");
   //Serial.println(millis());
-  if(millis() -  this->emotion_started <= 2600){
+  if(millis() -  this->emotion_started <= 3500){
     this->servo_last_millis = millis();
     controller->servo[0]->move(30,30);
     controller->servo[1]->move(30,30);
@@ -99,7 +99,7 @@ void Anger::musicAction(){
   this->music_last_millis = millis();
   this->music_interval = this->emotion_duration;
   controller->player->setVolume(30);
-  controller->player->play(6);
+  controller->player->play(7);
 }
 
 void Anger::ledAction(){

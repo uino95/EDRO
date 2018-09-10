@@ -6,7 +6,7 @@ Disgust::Disgust(Controller* controller, unsigned long start){
   
   this->controller = controller;
   
-	this->emotion_duration = 10000;
+	this->emotion_duration = 5000;
 	this->emotion_started = start;
 
   this->motor_last_millis = start;
