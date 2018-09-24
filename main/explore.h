@@ -6,30 +6,31 @@
 
 using namespace std;
 
-class Explore: public Emotion{
+class Explore: public Emotion
+{
 
 public:
-	Explore(Controller* controller, unsigned long start);
-	~Explore();
+    Explore(Controller *controller, unsigned long start);
+    ~Explore();
 
-	void motorAction();
-	void servoAction();
-	void musicAction();
-	void ledAction();
-	void sonarAction();
-	void stop();
+    void motorAction();
+    void servoAction();
+    void musicAction();
+    void ledAction();
+    void sonarAction();
+    void stop();
 
 private:
-	Controller* controller;
-  	bool isMotorStopped;
-  	bool isMotorSwapped;
+    Controller *controller;
+    bool isMotorStopped;
+    bool isMotorSwapped;
     bool isSonarSwapped;
 
-	int distance;
-	int consecutive;
-	int threshold;
-	int obstacleFound;
-	unsigned long rotation;
+    int distance;
+    int consecutive;
+    int threshold;
+    int obstacleFound;
+    unsigned long rotation;
 };
 
 #endif // EXPLORE_H_

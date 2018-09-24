@@ -1,7 +1,5 @@
 #include "controller.h"
 
-//TODO     - put the setup in the constructor instead of doing a separeted method
-
 MyServo* servo1 = new MyServo();
 MyServo* servo2 = new MyServo();
 MyServo* servo3 = new MyServo();
@@ -34,7 +32,5 @@ void setup(){
 }
  
 void loop(){
-   //sonar->computeDistance();
-   //delay(25);
    controller.updateEmotion(millis());
 }

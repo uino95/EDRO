@@ -6,23 +6,24 @@
 
 using namespace std;
 
-class Fear: public Emotion{
+class Fear: public Emotion
+{
 
 public:
-	Fear(Controller* controller, unsigned long start);
-	~Fear();
+    Fear(Controller *controller, unsigned long start);
+    ~Fear();
 
-	void motorAction();
-	void servoAction();
-	void musicAction();
-	void ledAction();
- void sonarAction();
-	void stop();
+    void motorAction();
+    void servoAction();
+    void musicAction();
+    void ledAction();
+    void sonarAction();
+    void stop();
 
 private:
-	Controller* controller;
-  	bool isServoSwapped;
-  	bool isMotorSwapped;
+    Controller *controller;
+    bool isServoSwapped;
+    bool isMotorSwapped;
     bool isLedSwapped;
 };
 

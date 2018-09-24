@@ -6,23 +6,24 @@
 
 using namespace std;
 
-class Disgust: public Emotion{
+class Disgust: public Emotion
+{
 
 public:
-	Disgust(Controller* controller, unsigned long start);
-	~Disgust();
+    Disgust(Controller *controller, unsigned long start);
+    ~Disgust();
 
-	void motorAction();
-	void servoAction();
-	void musicAction();
-	void ledAction();
- void sonarAction();
-	void stop();
+    void motorAction();
+    void servoAction();
+    void musicAction();
+    void ledAction();
+    void sonarAction();
+    void stop();
 
 private:
-	Controller* controller;
-  	bool isServoSwapped;
-  	bool isMotorSwapped;
+    Controller *controller;
+    bool isServoSwapped;
+    bool isMotorSwapped;
 };
 
 #endif // DISGUST_H_

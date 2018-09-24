@@ -6,19 +6,20 @@
 
 using namespace std;
 
-class Sonar{
+class Sonar
+{
 
 public:
-	Sonar();
-	void setup(uint8_t trigPin, uint8_t echo2Pin, unsigned int maxDistance);
-	int computeDistance();
+    Sonar();
+    void setup(uint8_t trigPin, uint8_t echo2Pin, unsigned int maxDistance);
+    int computeDistance();
 
 private:
-	NewPing sonar;
-	int trigPin;
-	int echoPin;
-	// int duration;
-	int distance;
+    NewPing sonar;
+    int trigPin;
+    int echoPin;
+    // int duration;
+    int distance;
 };
 
 #endif // SONAR_H_

@@ -6,30 +6,31 @@
 
 using namespace std;
 
-class Search: public Emotion{
+class Search: public Emotion
+{
 
 public:
-	Search(Controller* controller, unsigned long start);
-	~Search();
+    Search(Controller *controller, unsigned long start);
+    ~Search();
 
-	void motorAction();
-	void servoAction();
-	void musicAction();
-	void ledAction();
-	void sonarAction();
-	void stop();
+    void motorAction();
+    void servoAction();
+    void musicAction();
+    void ledAction();
+    void sonarAction();
+    void stop();
 
 private:
-	Controller* controller;
-  	bool isServoSwapped;
-  	bool isMotorSwapped;
+    Controller *controller;
+    bool isServoSwapped;
+    bool isMotorSwapped;
     bool isLedSwapped;
 
-	int distance;
-	int consecutive;
-	int threshold;
-	int obstacleFound;
-	unsigned long rotation;
+    int distance;
+    int consecutive;
+    int threshold;
+    int obstacleFound;
+    unsigned long rotation;
 };
 
 #endif // SEARCH_H_

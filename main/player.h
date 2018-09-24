@@ -7,18 +7,19 @@
 
 using namespace std;
 
-class Player{
+class Player
+{
 
 public:
-	Player();
-	DFRobotDFPlayerMini myDFPlayer;
-	void setup(int TX, int RX);
-	void play(int song);
-	void setVolume(int volume);
-	void stop();
+    Player();
+    DFRobotDFPlayerMini myDFPlayer;
+    void setup(int TX, int RX);
+    void play(int song);
+    void setVolume(int volume);
+    void stop();
 
 private:
-	void printDetail(uint8_t type, int value);
+    void printDetail(uint8_t type, int value);
 };
 
 #endif // PLAYER_H_
